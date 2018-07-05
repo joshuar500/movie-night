@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body>
+    <button id="play_video">Play</button>
+    <button id="pause_video">Pause</button>
+    <input id="video_src" value="https://static.videezy.com/system/resources/previews/000/011/563/original/Animals_09_-_4K_res.mp4" type="text" />
+    <button id="add_video">Add Video</button>
+    <div id="video">
+        <video id="embedded_video" preload="auto">
+            <!-- <source src="https://static.videezy.com/system/resources/previews/000/011/563/original/Animals_09_-_4K_res.mp4" type="video/mp4"> -->
+        </video>
+    </div>
+    <ul id="messages"></ul>
+    <form action="">
+      <input id="m" autocomplete="off" />
+      <button name="send_chat">Send</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
