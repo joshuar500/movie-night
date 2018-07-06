@@ -9,3 +9,7 @@ form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 
 #messages li { padding: 5px 10px; }
 /* #messages li:nth-child(odd) { background: rgba(130, 224, 255, 0.2); } */
 #messages { bottom: 50px; position: fixed;  }
+
+
+/* media element override */
+.mejs__controls { display: none; }

@@ -26,7 +26,7 @@ let videoString = undefined;
 
 io.on('connection', function(socket){
     // connection settings
-    if (videoString !== undefined && !sentVideoString) {
+    if (videoString !== undefined) {
         socket.emit('added video', videoString);
     }
 

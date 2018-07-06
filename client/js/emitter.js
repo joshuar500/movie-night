@@ -1,5 +1,5 @@
 import io from 'socket.io-client';
-import addSourceToVideo from './videoHelper';
+import addSourceToVideo, { player } from './videoHelper';
 
 var socket = io();
 var currentTime = 0;
@@ -18,12 +18,12 @@ $('form').submit(function(){
 });
 $('#play_video').click(function() {
     socket.emit('play video', currentTime);
-    $('#embedded_video').get(0).play();
+    player.play();
     return false;
 });
 $('#pause_video').click(function() {
     socket.emit('pause video', currentTime);
-    $('#embedded_video').get(0).pause();
+    player.pause();
     return false;
 });
 $('#embedded_video').on('ended', function() {
